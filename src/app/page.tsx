@@ -1,28 +1,13 @@
+"use client";
+
 import Image from "next/image";
-import {
-  Bars3Icon,
-  MagnifyingGlassIcon,
-  QuestionMarkCircleIcon,
-  ShoppingBagIcon,
-} from "@heroicons/react/24/outline";
+import { Header } from "@/components";
 
 export default function Home() {
   return (
     <main>
       <div className="relative h-[600px] grid place-content-center">
-        <header className="absolute inset-x-0 z-10">
-          <nav className="bg-white/10 px-4 h-16 flex items-center justify-between">
-            <div className="flex items-center gap-x-6">
-              <Bars3Icon className="text-white h-6 w-6" />
-              <MagnifyingGlassIcon className="text-white h-6 w-6" />
-            </div>
-            <Image src="/images/logo.svg" width={36} height={36} alt="Logo" />
-            <div className="flex items-center gap-x-6">
-              <QuestionMarkCircleIcon className="text-white h-6 w-6" />
-              <ShoppingBagIcon className="text-white h-6 w-6" />
-            </div>
-          </nav>
-        </header>
+        <Header />
         <Image
           src="/images/home-page-01-hero-full-width.jpg"
           alt="Hero"
