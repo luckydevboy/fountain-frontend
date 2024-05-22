@@ -68,7 +68,7 @@ export default Menu;
 
 const renderWomenTab = () => {
   return (
-    <div className="grid grid-cols-2 gap-y-8 justify-items-center">
+    <div className="grid grid-cols-2 gap-x-4 gap-y-8 justify-items-center">
       <div>
         <Image
           src="/images/mega-menu-category-01.jpg"
@@ -76,6 +76,7 @@ const renderWomenTab = () => {
           width={136}
           height={136}
           className="rounded-lg"
+          priority={true}
         />
         <div className="mt-4 font-semibold">New Arrivals</div>
         <div className="text-gray-500 text-sm">Shop Now</div>
@@ -87,6 +88,7 @@ const renderWomenTab = () => {
           width={136}
           height={136}
           className="rounded-lg"
+          priority={true}
         />
         <div className="mt-4 font-semibold">Basic Tees</div>
         <div className="text-gray-500 text-sm">Shop Now</div>
@@ -98,6 +100,7 @@ const renderWomenTab = () => {
           width={136}
           height={136}
           className="rounded-lg"
+          priority={true}
         />
         <div className="mt-4 font-semibold">Accessories</div>
         <div className="text-gray-500 text-sm">Shop Now</div>
@@ -109,6 +112,7 @@ const renderWomenTab = () => {
           width={136}
           height={136}
           className="rounded-lg"
+          priority={true}
         />
         <div className="mt-4 font-semibold">Carry</div>
         <div className="text-gray-500 text-sm">Shop Now</div>
@@ -119,7 +123,7 @@ const renderWomenTab = () => {
 
 const renderMenTab = () => {
   return (
-    <div className="grid grid-cols-2 gap-y-8 justify-items-center">
+    <div className="grid grid-cols-2 gap-x-4 gap-y-8 justify-items-center">
       <div>
         <Image
           src="/images/mega-menu-01-men-category-01.jpg"
@@ -127,6 +131,7 @@ const renderMenTab = () => {
           width={136}
           height={136}
           className="rounded-lg"
+          priority={true}
         />
         <div className="mt-4 font-semibold">New Arrivals</div>
         <div className="text-gray-500 text-sm">Shop Now</div>
@@ -138,6 +143,7 @@ const renderMenTab = () => {
           width={136}
           height={136}
           className="rounded-lg"
+          priority={true}
         />
         <div className="mt-4 font-semibold">Basic Tees</div>
         <div className="text-gray-500 text-sm">Shop Now</div>
@@ -149,6 +155,7 @@ const renderMenTab = () => {
           width={136}
           height={136}
           className="rounded-lg"
+          priority={true}
         />
         <div className="mt-4 font-semibold">Accessories</div>
         <div className="text-gray-500 text-sm">Shop Now</div>
@@ -160,6 +167,7 @@ const renderMenTab = () => {
           width={136}
           height={136}
           className="rounded-lg"
+          priority={true}
         />
         <div className="mt-4 font-semibold">Carry</div>
         <div className="text-gray-500 text-sm">Shop Now</div>

@@ -18,10 +18,10 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-[#111827]/50" />
         <div className="relative grid place-content-center">
-          <h1 className="text-white font-bold text-4xl text-center">
+          <h1 className="text-white font-bold text-4xl text-center px-6">
             New arrivals are here
           </h1>
-          <p className="text-white mt-4 mb-8 max-w-96 text-center text-xl">
+          <p className="text-white mt-4 mb-8 max-w-96 text-center text-xl px-6">
             The new arrivals have, well, newly arrived. Check out the latest
             options from our summer small-batch release while they&#39;re still
             in stock.
