@@ -19,14 +19,16 @@ export default function Home() {
         <div className="absolute inset-0 bg-[#111827]/50" />
         <div className="relative grid place-content-center">
           <h1 className="text-white font-bold text-4xl text-center">
-            محصولات جدید
+            New arrivals are here
           </h1>
-          <p className="text-white mt-4 mb-8 max-w-96 text-center text-lg">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-            استفاده از طراحان گرافیک است.
+          <p className="text-white mt-4 mb-8 max-w-96 text-center text-xl">
+            The new arrivals have, well, newly arrived. Check out the latest
+            options from our summer small-batch release while they&#39;re still
+            in stock.
           </p>
-          <button className="bg-white px-8 py-3 rounded-lg font-medium text-gray-700 mx-auto hover:bg-gray-200 transition-colors">
-            خرید محصولات جدید
+          {/* TODO: Create the button component */}
+          <button className="bg-white px-8 py-3 rounded-lg font-semibold text-gray-700 mx-auto hover:bg-gray-200 transition-colors">
+            Shop New Arrivals
           </button>
         </div>
       </div>
