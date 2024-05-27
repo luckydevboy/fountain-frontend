@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode, useState } from "react";
 import { cx } from "class-variance-authority";
 
@@ -24,13 +26,13 @@ const Tab = ({ tabs }: Props) => {
             <div
               className={cx([
                 "mb-3 font-semibold",
-                activeTab.id === _tabs[index].id && "text-violet-700",
+                activeTab.id === _tabs[index].id && "text-indigo-700",
               ])}
             >
               {tab.title}
             </div>
             {activeTab.id === _tabs[index].id && (
-              <div className="absolute translate-x-1/2 right-1/2 h-0.5 bg-violet-700 w-4/5"></div>
+              <div className="absolute translate-x-1/2 right-1/2 h-0.5 bg-indigo-700 w-4/5"></div>
             )}
           </div>
         ))}

@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Bars3Icon,
   MagnifyingGlassIcon,

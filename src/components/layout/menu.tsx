@@ -1,3 +1,5 @@
+"use client";
+
 import { AnimatePresence, motion } from "framer-motion";
 import { useRef } from "react";
 import { useClickAway } from "react-use";
