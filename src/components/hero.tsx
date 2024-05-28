@@ -17,7 +17,7 @@ const Hero = () => {
         <h1 className="text-white font-bold text-4xl text-center px-6">
           New arrivals are here
         </h1>
-        <p className="text-white mt-4 mb-8 max-w-96 text-center text-xl px-6">
+        <p className="text-white mt-4 mb-8 max-w-3xl text-center text-xl px-6">
           The new arrivals have, well, newly arrived. Check out the latest
           options from our summer small-batch release while they&#39;re still in
           stock.

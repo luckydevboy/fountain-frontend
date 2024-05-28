@@ -15,6 +15,7 @@ const MiniHero = ({ imgSrc, description, title, buttonTitle }: Props) => {
         alt="Hero"
         fill
         objectFit="cover"
+        objectPosition="center"
         quality={100}
         priority={true}
       />
@@ -24,7 +25,7 @@ const MiniHero = ({ imgSrc, description, title, buttonTitle }: Props) => {
         <h1 className="text-white font-bold text-4xl text-center px-6">
           {title}
         </h1>
-        <p className="text-white mt-4 mb-8 max-w-96 text-center text-xl px-6">
+        <p className="text-white mt-4 mb-8 max-w-3xl text-center text-xl px-6">
           {description}
         </p>
         {/* TODO: Create the button component */}
