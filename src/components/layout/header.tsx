@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { useState } from "react";
-import { Menu } from "@/components";
+import Menu from "./menu";
 
 const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
