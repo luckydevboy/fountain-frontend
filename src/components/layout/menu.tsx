@@ -28,13 +28,13 @@ const Menu = ({ onClose, isOpen }: Props) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50"
+            className="fixed inset-0 bg-black/50 z-10"
           />
           <motion.div
             initial={{ left: "-75%" }}
             animate={{ left: 0 }}
             exit={{ left: "-75%" }}
-            className="bg-white fixed w-3/4 inset-y-0 overflow-y-auto"
+            className="bg-white fixed w-3/4 inset-y-0 overflow-y-auto z-20"
             ref={menuRef}
           >
             <XMarkIcon
