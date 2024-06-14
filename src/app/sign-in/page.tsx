@@ -1,7 +1,12 @@
 import { AuthForm } from "@/components";
+import { Suspense } from "react";
 
 const SignIn = () => {
-  return <AuthForm type="sign-in" />;
+  return (
+    <Suspense>
+      <AuthForm type="sign-in" />
+    </Suspense>
+  );
 };
 
 export default SignIn;
