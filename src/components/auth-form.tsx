@@ -9,6 +9,7 @@ import { useState } from "react";
 import { Logo } from "@/components";
 import { useRegister } from "@/api/hooks";
 import { useSearchParams } from "next/navigation";
+import { Button } from "@/components/ui";
 
 type Inputs = {
   name: string;
@@ -178,14 +179,9 @@ const AuthForm = ({ type }: Props) => {
               )}
             </div>
           </div>
-
-          {/* TODO: Add loading spinner */}
-          <button
-            type="submit"
-            className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
+          <Button type="submit" className="w-full">
             {type === "sign-in" ? "Sign in" : "Register"}
-          </button>
+          </Button>
         </form>
         <div className="text-red-500 mt-2 text-sm">{renderError(error)}</div>
 

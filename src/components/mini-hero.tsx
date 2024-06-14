@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "@/components/ui";
 
 type Props = {
   title: string;
@@ -28,10 +29,9 @@ const MiniHero = ({ imgSrc, description, title, buttonTitle }: Props) => {
         <p className="text-white mt-4 mb-8 max-w-3xl text-center text-xl px-6">
           {description}
         </p>
-        {/* TODO: Create the button component */}
-        <button className="bg-white px-8 py-3 rounded-lg font-semibold text-gray-700 mx-auto hover:bg-gray-200 transition-colors">
+        <Button color="secondary" size="large" className="max-w-max mx-auto">
           {buttonTitle}
-        </button>
+        </Button>
       </div>
     </div>
   );

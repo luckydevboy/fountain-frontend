@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "@/components/ui";
 
 const Hero = () => {
   return (
@@ -22,10 +23,9 @@ const Hero = () => {
           options from our summer small-batch release while they&#39;re still in
           stock.
         </p>
-        {/* TODO: Create the button component */}
-        <button className="bg-white px-8 py-3 rounded-lg font-semibold text-gray-700 mx-auto hover:bg-gray-200 transition-colors">
+        <Button color="secondary" size="large" className="max-w-max mx-auto">
           Shop New Arrivals
-        </button>
+        </Button>
       </div>
     </div>
   );
