@@ -1,5 +1,6 @@
 "use client";
 
+import { useSession } from "next-auth/react";
 import {
   Bars3Icon,
   MagnifyingGlassIcon,
@@ -8,10 +9,14 @@ import {
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
+
 import Menu from "./menu";
+import { Button } from "@/components/ui";
 
 const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const { data: session } = useSession();
 
   return (
     <>
@@ -28,7 +33,7 @@ const Header = () => {
           <Image src="/images/logo.svg" width={36} height={36} alt="Logo" />
           <div className="flex items-center gap-x-6">
             <QuestionMarkCircleIcon className="text-white h-6 w-6" />
-            <ShoppingBagIcon className="text-white h-6 w-6" />
+            {session && <ShoppingBagIcon className="text-white h-6 w-6" />}
           </div>
         </nav>
 
@@ -44,7 +49,13 @@ const Header = () => {
           <div className="flex items-center gap-x-6">
             <MagnifyingGlassIcon className="text-white h-6 w-6" />
             <QuestionMarkCircleIcon className="text-white h-6 w-6" />
-            <ShoppingBagIcon className="text-white h-6 w-6" />
+            {session ? (
+              <ShoppingBagIcon className="text-white h-6 w-6" />
+            ) : (
+              <Link href="/sign-in">
+                <Button color="secondary">Sign in</Button>
+              </Link>
+            )}
           </div>
         </nav>
       </header>

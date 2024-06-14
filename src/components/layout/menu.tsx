@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useRef } from "react";
 import { useClickAway } from "react-use";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 import { Tab } from "@/components";
 import Image from "next/image";
@@ -57,7 +58,12 @@ const Menu = ({ onClose, isOpen }: Props) => {
               <div className="font-semibold text-lg text-gray-600">
                 Create an account
               </div>
-              <div className="font-semibold text-lg text-gray-600">Sign in</div>
+              <Link
+                href="/sign-in"
+                className="font-semibold text-lg text-gray-600"
+              >
+                Sign in
+              </Link>
             </div>
           </motion.div>
         </>
