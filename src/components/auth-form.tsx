@@ -179,7 +179,7 @@ const AuthForm = ({ type }: Props) => {
               )}
             </div>
           </div>
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full" isLoading={isLoading}>
             {type === "sign-in" ? "Sign in" : "Register"}
           </Button>
         </form>
